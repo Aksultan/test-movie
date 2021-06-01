@@ -30,3 +30,8 @@ button{
     justify-content: center;
     gap: 15px;
 }
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}
