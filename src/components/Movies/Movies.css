@@ -1,0 +1,32 @@
+form{
+    display: flex;
+    padding: 15px 0 0;
+}
+
+button, input{
+    border: 1px solid #000;
+    font: 25px 'Segoe UI';
+}
+
+input{
+    padding: 20px;
+    width: 80%;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    width: 20%;
+    border-left: unset;
+}
+
+.cards-container{
+    width:100%;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}

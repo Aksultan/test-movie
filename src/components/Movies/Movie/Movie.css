@@ -1,0 +1,15 @@
+.card{
+    width: 18%;
+}
+
+.card-image{
+    height: 330px;
+    width: 100%;
+}
+
+.action-card{
+    display: flex!important;
+    flex-direction: column;
+    justify-content: flex-start!important;
+    height: 100%;
+}
