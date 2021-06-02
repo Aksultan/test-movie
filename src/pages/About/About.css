@@ -1,0 +1,14 @@
+.about{
+    margin-top: 25px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.badge-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap:5px;
+    margin: 15px 0;
+}

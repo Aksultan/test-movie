@@ -13,7 +13,8 @@ function Movies(){
         e.preventDefault()
         getMovie(e.target[0].value).then(data=>{
             setMovies(data.Search)
-            setCurrentPage(Number(data.totalResults))
+            //very complex math
+            setCurrentPage(Number(Math.floor(data.totalResults/10)+(data.totalResults%10&&1)))
             setLastSearch(e.target[0].value)
         })
         
@@ -30,7 +31,7 @@ function Movies(){
             <div className="cards-container">
                 {movies&&movies.map((movie, index)=><Movie key={index} movie={movie}/>)}
             </div>
-            {currentPage&&<Pagination count={currentPage} onChange={(e, page)=>handleChange(page)} classes={{root: 'pagination'}} size="large"/>}
+            {currentPage>0&&<Pagination count={currentPage} onChange={(e, page)=>handleChange(page)} classes={{root: 'pagination'}} size="large"/>}
 
         </>
     );
